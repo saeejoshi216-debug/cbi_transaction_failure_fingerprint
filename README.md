@@ -58,7 +58,3 @@ The report translates findings into prioritised, evidence-backed recommendations
 - **Statistical testing** — t-tests, Mann-Whitney U, Cohen's d for significance and effect-size checks
 - **HTML/CSS/JavaScript** — interactive report
 - **[Chart.js](https://www.chartjs.org/)** — data visualisations
-
-## Limitations
-
-The report includes a dedicated limitations section covering synthetic data uniformity, partial D03 settlement coverage (66.2%), the VoP impact range (25–45%), and other caveats — full detail in the [report itself](#).
