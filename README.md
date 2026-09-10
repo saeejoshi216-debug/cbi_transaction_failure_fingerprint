@@ -1,0 +1,2 @@
+# cbi_transaction_failure_fingerprint
+abc
