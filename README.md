@@ -2,13 +2,13 @@
 
 **Why do Irish domestic payments fail?** A data-driven investigation into 2.1M+ Irish domestic transactions, built for the Central Bank of Ireland's Innovation Data Challenge 2026.
 
-🔗 **Live report:** [add your hosted link here]
+🔗 **Live report:** https://cbi-transaction-failure-fingerprint.netlify.app/
 
 ## Overview
 
-Ireland's EU Verification of Payee (VoP) mandate went live in October 2025. This report uses 2024 transaction data — predating that mandate — to quantify exactly what VoP would have prevented, and to separate genuine payment infrastructure problems from data quality problems.
+Ireland's EU Verification of Payee (VoP) mandate went live in October 2025. This report uses 2024 transaction data — predating that mandate, to quantify exactly what VoP would have prevented, and to separate genuine payment infrastructure problems from data quality problems.
 
-**Core finding:** Ireland's payment failure problem is a *data infrastructure problem, not a system capacity problem*. The payment system is functioning correctly — it is correctly rejecting payments to wrong, closed, or blocked accounts.
+**Core finding:** Ireland's payment failure problem is a *data infrastructure problem, not a system capacity problem*. The payment system is functioning correctly, it is correctly rejecting payments to wrong, closed, or blocked accounts.
 
 ### Headline numbers
 
@@ -23,7 +23,7 @@ Ireland's EU Verification of Payee (VoP) mandate went live in October 2025. This
 
 ## Key Findings
 
-- **Account Problems dominate.** AC01 (wrong IBAN, 25.1%), AC04 (closed account, 19.9%), and AC06 (blocked account, 15.2%) together cause 60.2% of all failures — the settlement layer is working correctly; the account data feeding it is not.
+- **Account Problems dominate.** AC01 (wrong IBAN, 25.1%), AC04 (closed account, 19.9%), and AC06 (blocked account, 15.2%) together cause 60.2% of all failures, the settlement layer is working correctly; the account data feeding it is not.
 - **The merchant value inversion.** Merchants account for only 9.9% of failures by count but 57.1% of value at risk (average failed transaction: €898 vs €74 for consumers) — VoP delivers roughly 12× more financial protection per B2B event than per consumer event.
 - **One field explains most data-quality failures.** BE04 (missing creditor address) accounts for 88.5% of all Data Quality failures — a single mandatory field check at payment initiation would eliminate most of an entire failure category at zero infrastructure cost.
 - **Time-of-day and weekend patterns** were tested rigorously (t-test, Mann-Whitney U, Cohen's d) and reported honestly where statistical significance was mixed, rather than overstated.
@@ -62,11 +62,3 @@ The report translates findings into prioritised, evidence-backed recommendations
 ## Limitations
 
 The report includes a dedicated limitations section covering synthetic data uniformity, partial D03 settlement coverage (66.2%), the VoP impact range (25–45%), and other caveats — full detail in the [report itself](#).
-
-## Team
-
-**Group 1 — UCD Michael Smurfit Business School, Dublin**
-
-Sanyukta Thakar · Jagruti Thakkar · Barira Chawhan · Saee Kiran Joshi · Angel Sharma
-
-Prepared for the Central Bank of Ireland Innovation Data Challenge 2026.
